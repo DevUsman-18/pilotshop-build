@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 0;
+}
+
+nav img {
+	width: 17px;
+	height: 17px;
+}
+
+a {
+	text-decoration: none;
+	margin: 10px;
+}
