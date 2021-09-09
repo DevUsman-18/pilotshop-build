@@ -6,8 +6,12 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	padding: 10px 0;
+	background-color: #DCDCDC;
 }
 
+.mobile-nav {
+	display: none;
+}
 nav img {
 	width: 17px;
 	height: 17px;
@@ -16,4 +20,31 @@ nav img {
 a {
 	text-decoration: none;
 	margin: 10px;
+}
+
+input {
+	border: none;
+	background-color: #DCDCDC;
+}
+
+.nav-border {
+	border-right: solid 1px gray;
+	padding: 10px 15px;
+}
+
+@media screen and (max-width: 800px) {
+	nav {
+		display: none;
+		padding: 10px;
+	}
+	
+	.mobile-nav {
+		display: flex;
+		justify-content: space-between;
+		height:  75px;
+	}
+	
+	.middle-nav {
+		align-self: flex-end;
+	}
 }
