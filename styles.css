@@ -1,7 +1,9 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
 }
 
+/*NAV*/
 nav {
 	display: flex;
 	justify-content: space-around;
@@ -12,6 +14,7 @@ nav {
 .mobile-nav {
 	display: none;
 }
+
 nav img {
 	width: 17px;
 	height: 17px;
@@ -19,7 +22,7 @@ nav img {
 
 a {
 	text-decoration: none;
-	margin: 10px;
+	color: #000000;
 }
 
 input {
@@ -30,6 +33,49 @@ input {
 .nav-border {
 	border-right: solid 1px gray;
 	padding: 10px 15px;
+}
+
+/*HEADER*/
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px;
+}
+
+.mobile-header {
+	display: none;
+}
+
+header a {
+	padding: 30px ;
+}
+
+.home {
+	border: 2px solid #000000;
+	padding: 15px;
+}
+
+header a:hover {
+	border: 2px solid #000000;
+	padding: 15px;
+	margin: 10px;
+}
+
+.settings {
+	position: fixed;
+	top: 150px;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	background-color:#DCDCDC ;
+	border-radius: 5px;
+}
+
+.settings img {
+	width: 25px;
+	height: 25px;
+	display: block;
+	margin: 10px;
 }
 
 @media screen and (max-width: 800px) {
@@ -47,4 +93,14 @@ input {
 	.middle-nav {
 		align-self: flex-end;
 	}
+	
+	header {
+		display: none;
+	}
+	
+	.mobile-header {
+		display: flex;
+		justify-content: center;	
+	}
+	
 }
